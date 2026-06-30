@@ -32,3 +32,6 @@ fs.createWriteStream(경로, 내용, {옵션});
 - mode : 기본은 0o666, 파일 모드를 지정
 - autoClose : 기본값은 true, 읽기가 끝난 후 파일을 자동으로 닫을지 지정
 - start : 기본은 0, 파일을 어디서부터 읽을지 지정
+
+파이프 : 2개의 스트림을 연결
+fs.readStream.pipe(writeStream, {옵션});

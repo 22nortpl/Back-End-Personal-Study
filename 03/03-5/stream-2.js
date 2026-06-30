@@ -6,4 +6,4 @@ const writeStream = fs.createWriteStream("./writeMe.txt");
 readStream.on("data", (chunk) => {
   console.log("new chunk received:");
   writeStream.write(chunk);
-})
+});
